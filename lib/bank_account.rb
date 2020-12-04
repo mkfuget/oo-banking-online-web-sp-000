@@ -18,5 +18,8 @@ class BankAccount
     return status == "open" && @balance > 0
   end
   
+  def close_account
+    @close_account = "closed" 
+  end 
   
 end
