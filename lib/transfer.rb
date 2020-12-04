@@ -16,7 +16,7 @@ class Transfer
     if(@status != "pending")
       return "transaction complete"
     end
-    if(@amount < @sender.balance)
+    if(valid?)
       @sender.balance -= @amount
       @receiver.balance += @amount 
       @status = "complete"
