@@ -22,4 +22,7 @@ class BankAccount
     @status = "closed" 
   end 
   
+  private 
+  attr_accessor :name
+  
 end
