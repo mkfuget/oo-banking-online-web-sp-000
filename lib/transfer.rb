@@ -16,7 +16,12 @@ class Transfer
     if(@amount < @sender.balance)
       @sender.balance -= @amount
       @receiver.balance += @amount 
-    end 
+      @status = "complete"
+      return @status
+    else 
+      return ""
+      
+    
   end
   
   
