@@ -11,7 +11,7 @@ class BankAccount
   end 
   
   def display_balance 
-    return "@balance 
+    return "Your #{@balance} is $1000."
   end 
   
   def valid? 
