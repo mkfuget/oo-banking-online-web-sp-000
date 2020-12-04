@@ -9,7 +9,7 @@ class Transfer
   end 
   
   def valid? 
-    return @sender.valid? && @receiver.valid? 
+    return @sender.valid? && @receiver.valid? && @amount < @sender.balance
   end 
   
   def execute_transaction 
